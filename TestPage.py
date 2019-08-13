@@ -8,7 +8,7 @@ class MyTestCase(unittest.TestCase):
     # by using http://httpbin.org/headers, we can see our user-agent.
     # This test case verifies the user-agent shown is 'Mobile'.
     def test_UserAgent(self):
-        response = recon('http://httpbin.org/headers')
+        response = recon('http://172.18.58.238/headers.php')
         self.assertTrue('"User-Agent": "Mobile"' in response)
 
     # Testing if image link is jpg for point 7.

@@ -41,7 +41,7 @@ def recon(url):
     print("==========Reconnaissance Results==========")
     # retrieves the status code of the response and print OK if the status code is 200.
 
-    url2 = 'http://httpbin.org/headers'
+    url2 = 'http://172.18.58.238/headers.php'
     rh = requests.get(url2, headers=headers)
     print(rh.text)
 
